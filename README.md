@@ -57,6 +57,8 @@ start project
 
 [TailwindCSS](https://nerdcave.com/tailwind-cheat-sheet)
 
+[React Native Vector Icons](https://oblador.github.io/react-native-vector-icons/)
+
 [NPM](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm)
 
 
