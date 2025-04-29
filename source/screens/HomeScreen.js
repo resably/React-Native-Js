@@ -5,12 +5,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 export default function HomeScreen({ navigation }) {
   return (
     <View className="flex-1 items-center justify-center bg-white">
-      <Text className="self-center">Click</Text>
-      <TouchableOpacity className="bg-blue-400 p-4 rounded-lg mt-4" onPress={() => navigation.navigate('Details')}>
-        <Text className="text-white text-lg">Diğer Sayfa</Text>
-        <Icon name="arrow-right" size={20} color="black" style={{ alignSelf: 'center' }} />
-      </TouchableOpacity>
-
+      <Text className="text-red-500 text-3xl align-center">Home Screen</Text>
     </View>
   )
 }
