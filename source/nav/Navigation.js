@@ -1,19 +1,17 @@
 import react from 'react';
-import { HomeScreen } from '../screens'
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-//import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import AuthNavigation from './AuthNavigation';
+import UserNavigation from './UserNavigation';
+import { useSelector } from 'react-redux';
 
 
 export default function Navigation() {
-    const Stack = createNativeStackNavigator();
-    // const Tab = createBottomTabNavigator();
+
+    const { isAuth } = useSelector((state) => state.user);
 
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
-                <Stack.Screen name="Home" component={HomeScreen} />
-            </Stack.Navigator>
+            {isAuth ? <UserNavigation /> : <AuthNavigation />}
         </NavigationContainer>
     );
 }
