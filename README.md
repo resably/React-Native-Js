@@ -13,6 +13,7 @@ React native JS version for quick start.
 - TailwindCSS
 - React Native Vector Icons
 - Expo
+- Axios
 
 
 
